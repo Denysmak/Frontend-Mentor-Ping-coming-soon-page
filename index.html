@@ -2,33 +2,46 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Ping coming soon page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+ 
+    
+    <title>Frontend Mentor | Ping coming soon page</title>
 </head>
 <body>
+  <main>
+    <div class="text">
+<h2>PING.</h2>
+<h1><span>We are launching</span> soon!</h1>
+<p>Subscribe and get notified</p>
+<form>
+  <input   placeholder="Your email address" type="email" required minlength="8">
+  <button>Notify Me</button>
+  
+</form>
+</div>
+<span class="error">
+</span>
+<img class="img"src="./images/illustration-dashboard.png" alt="">
 
-  We are launching soon!
 
-  Subscribe and get notified
 
-  Notify Me
+<div class="icons">
+<a href="https://www.facebook.com/frontendmentor/" target="_blank"><img onmouseover="facebook(this)"
+onmouseleave="facebookOut(this)" class="icon" src="./images/facebook.svg" alt=""></a>
 
-  &copy; Copyright Ping. All rights reserved.
+<a href="https://twitter.com/frontendmentor" target="_blank"><img onclick="twitterLink()" onmouseover="twitter(this)"
+onmouseleave="twitterOut(this)"  class="icon twitter" src="./images/twitter.svg" alt=""></a>
+<a href="https://www.instagram.com/" target="_blank">
+<img onclick="instagramLink()" onmouseover="instagram(this)"
+onmouseleave="instagramOut(this)"  class="icon" src="./images/instagram.svg" alt=""></a>
+</div>
 
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+
+
+</main>
+  <script src="./script.js"></script>
 </body>
 </html>
